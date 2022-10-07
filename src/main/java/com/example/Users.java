@@ -93,10 +93,7 @@ public class Users {
         password = scanner.nextLine();
         try {
             java.sql.Statement statement = connection.createStatement();
-            String query = "SELECT EXISTS(SELECT * FROM user WHERE username='" + username + "' and password='"
-                    + password + "');";
-            ResultSet data = statement.executeQuery(query);
-            System.out.println(data);
+            String query;
             System.out.println("what do you want to change? ");
             System.out.println("1: Username.");
             System.out.println("2: Age.");
@@ -131,7 +128,7 @@ public class Users {
                         System.out.println("Please, insert the new password: ");
                         String newPassword = scanner.nextLine();
                         statement = connection.createStatement();
-                        query = "UPDATE user SET username = '" + newPassword + "' WHERE username='" + username
+                        query = "UPDATE user SET password = '" + newPassword + "' WHERE username='" + username
                                 + "';";
                         statement.executeUpdate(query);
                     } catch (SQLException e) {
