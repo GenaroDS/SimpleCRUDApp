@@ -1,6 +1,5 @@
 # SimpleCRUDApp
-A simple Java crud application that connects to MySql through JBDC. It has create, read, update or delete functionalities for each User. An user consists of an username, password and age.
-The user flow is shown in the collapse text below:
+A simple Java CRUD application that connects to MySQL through JDBC. It has create, read, update, or delete functionalities for each user. A user consists of a username, password, and age. The user flow is shown in the collapsible text below.
 
 <details>
  <summary><h3>User flow</h3></summary>
